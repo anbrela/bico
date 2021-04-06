@@ -1,0 +1,145 @@
+:root {
+
+    --negro: #031926;
+    --verde: #64F58D;
+    --rojo: #D63230;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Mango";
+    src: url(Mango-Regular.otf);
+  }
+
+  @font-face {
+    font-family: "Rie";
+    src: url(Rie-Regular.otf);
+  }
+
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: "Rie";
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.header-left {
+width: 50%;
+height: 100vh;
+background: var(--negro);
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+
+.header-left video {
+    width: 100%;
+    
+}
+
+
+
+
+.header-right {
+    width: 50%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.header-right p {
+    color: var(--negro);
+    font-size: 170px;
+    font-family: 'Mango';
+    margin-left: 30px;
+    position: relative;
+}
+
+.header-right span {
+    width: 300px;
+    font-size: 50px;
+    font-family: "Rie";
+    position: absolute; 
+    margin-top: -60px;
+    margin-left: 120px;
+    
+}
+
+
+.ham {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: var(--negro);
+    right: 0;
+    top: -100px;
+    border-radius: 0px 0px 0px 30px;
+    transform: rotate(-40deg);
+}
+
+.ball1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--negro);
+    left: -5px;
+    animation: flip 10s linear infinite;
+}
+
+.ball2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--negro);
+    right: -5px;
+    animation: flip2 10s linear infinite;
+}
+
+@keyframes flip {
+
+    0% {
+        transform: translate(0px);
+    }
+
+    10% {
+        transform: translateY(160px);
+    }
+
+    20% {
+        transform: translate();
+    }
+    
+}
+
+
+@keyframes flip2 {
+
+    0% {
+        transform: translate(0px);
+    }
+
+    10% {
+        transform: translateY(160px);
+    }
+
+    20% {
+        transform: translate();
+    }
+    
+}
+
+
